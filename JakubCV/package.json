@@ -1,0 +1,15 @@
+{
+  "name": "JakubCV",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://cubewillcode.github.io/Jakub-Klodkowski-CV.git",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

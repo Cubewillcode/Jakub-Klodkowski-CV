@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="whole-board">
+            <h2 id="whoseTurn">Tic Tac Toe -> Start</h2>
+            <div id="game-board">
+                <div id="row-1">
+                    <div id="img-area1" onclick="appendSquare(this);">
+                    </div>
+                    <div id="img-area2" onclick="appendSquare(this);">
+                    </div>
+                    <div id="img-area3" onclick="appendSquare(this);">
+                    </div>
+                </div>
+                <div id="row-2">
+                    <div id="img-area4" onclick="appendSquare(this);">
+                    </div>
+                    <div id="img-area5" onclick="appendSquare(this);">
+                    </div>
+                    <div id="img-area6" onclick="appendSquare(this);">
+                    </div>
+                </div>
+                <div id="row-3">
+                    <div id="img-area7" onclick="appendSquare(this);">
+                    </div>
+                    <div id="img-area8" onclick="appendSquare(this);">
+                    </div>
+                    <div id="img-area9" onclick="appendSquare(this);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="score-names">
+            <form class="player-form">
+                <div>
+                    <input id="playerx_name" onfocusout="formFill()" type="text" placeholder="Player X Name">
+                </div>
+                <div>
+                    <input id="playero_name" onfocusout="formFill()" type="text" placeholder="Player O Name">
+                </div>
+                <div>
+                    <button id="start" onclick="startButton()" type="button">Start</button>
+                </div>
+                <div>
+                    <button id="reset" onclick="resetGameBoard();" type="button">Reset</button>
+                </div>
+            </form>
+            <h3>Score:</h3>
+            <table class="score-board">
+
+                <tr>
+                    <th id="playerX"></th>
+                    <th id="scoreX"></th>
+                </tr>
+                <tr>
+                    <th id="playerO"></th>
+                    <th id="scoreO"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

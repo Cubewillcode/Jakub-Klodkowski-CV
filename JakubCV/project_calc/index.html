@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <table class="calc">
+    <tr>
+      <th id="output" colspan="4">0</th>
+    </tr>
+    <tr>
+      <th id="input" colspan="4"></th>
+    </tr>
+    <tr>
+      <td colspan="2"><button onclick="ce()">CE</button></td>
+      <td><button onclick="del()">Del</button></td>
+      <td><button onclick="appendNumber('/')">÷</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(this.innerHTML)">1</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">2</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">3</button></td>
+      <td><button onclick="appendNumber('*')">x</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(this.innerHTML)">4</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">5</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">6</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">+</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(this.innerHTML)">7</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">8</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">9</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">-</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendNumber(this.innerHTML)">.</button></td>
+      <td><button onclick="appendNumber(this.innerHTML)">0</button></td>
+      <td colspan="2"><button onclick="equals()">=</button></td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  flex-flow: auto-flow;
+  height: 100%;
+  background-image: url(blackboard1.jpg);
+  background-size:	stretch;
+  background-repeat: no-repeat, repeat;
+}
+
+.legend {
+  display: flex;
+  text-align: left;
+  font-size: 2em;
+  justify-content: left;
+  padding: 20px;
+  color: black;
+}
+
+.calc{
+  background-color: #501A1A;
+  width: 400px;
+  min-width: 400px;
+  max-width: 40%;
+  height: 80%;
+  padding: 5px;
+  /* border-collapse: collapse; */
+  font-family: Gotham Rounded, sans-serif;
+  border: 20px solid #302A25;
+  border-radius: 15px;
+  margin: 0;
+}
+
+td {
+  color: white;
+  text-align: center;
+  background-color: #302A25;
+  /* border: 1px solid #828282; */
+  cursor: pointer;
+  max-width: 30px;
+  margin: 0;
+  outline: none;
+}
+
+button {
+	color: white;
+  font-size: 2.5em;
+  text-align: center;
+  background-color: #302A25;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  color: black;
+  background-color: #9B9B9B;
+}
+
+th {
+  background-color: #59A5B4;
+  text-align: right;
+  height: 75px;
+  color: black;
+  font-size: 3.5em
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    height: 100vh;
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #A66320, #0DA056);
+  }
+
+
+   .calc {
+      min-height: 130vh;
+      min-width: 70vh;
+      font-size: 2em;
+  }
+  
+}
